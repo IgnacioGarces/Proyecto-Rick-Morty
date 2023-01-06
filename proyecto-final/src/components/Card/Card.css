@@ -1,0 +1,31 @@
+.card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.card{
+    background-color: #223142;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+    padding: 8px;
+    border: 1px;
+    position: relative;
+}
+
+h2{
+    color: whitesmoke;
+}
+
+button{
+    background-color: #6ECCAF;
+    color: #344D67;
+    width: fit-content;
+    border-radius: 5px;
+    align-self:flex-end;
+    padding: 0;
+    border: 1px;
+}
