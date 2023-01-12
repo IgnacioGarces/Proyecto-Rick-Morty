@@ -11,8 +11,25 @@ nav{
     justify-content: space-between;
 }
 
+.name{
+    text-decoration: none;
+    color: #6ECCAF;
+    background-color: #344d67 ;
+}
+.name:hover{
+    color: #6ECCAF;
+}
+
 .title{
     white-space: nowrap;
     text-decoration: none;
     color: #6ECCAF;
+    background-color: #344d67 ;
+    border-style: none;
+}
+
+.title:hover{
+    color: #344d67;
+    background-color: #6ECCAF;
+
 }
