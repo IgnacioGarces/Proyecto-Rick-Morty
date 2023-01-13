@@ -1,0 +1,8 @@
+.filter-h2{
+    font-size: calc(1.325rem + .9vw);
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #6ECCAF !important;
+    margin-left: 2rem ;
+}

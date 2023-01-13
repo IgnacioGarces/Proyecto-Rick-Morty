@@ -4,7 +4,7 @@ export default function Navegation() {
     
     return(
         <header>
-            <nav className='navbar navbar-expand-lg  w-100 h-80'>
+            <nav className='navbar navbar-expand-lg w-100 '>
                 <div className='container'>
                     <a className='name'>Rick & Morty</a>
                     <ul className='d-flex flex-row navbar-nav nav-pills'>

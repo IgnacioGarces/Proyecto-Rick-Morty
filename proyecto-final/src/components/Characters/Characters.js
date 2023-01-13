@@ -1,3 +1,4 @@
+import '../Characters/Characters.css'
 import { useEffect, useState } from "react"
 import Filters from "../Filters/Filters"
 import Navegation from "../Navegation/Navegation"
@@ -52,14 +53,20 @@ export default function Characters() {
      },[])
 
     return(
-        <Fragment>
+        <Fragment className='d-flex '>
             <Navegation/>
-            <section className="d-flex">
-            <Filters nombreFiltro='Character Alive' datoFiltro='Alive' muestraValor={mostrarValor}/>
-            <Filters nombreFiltro='Character Dead' datoFiltro='Dead' muestraValor={mostrarValor}/>
-            <Filters nombreFiltro='Male' datoFiltro='Male' muestraValor={mostrarValor}/>
-            <Filters nombreFiltro='Female' datoFiltro='Female' muestraValor={mostrarValor}/>
-            <Filters nombreFiltro='Origin Unknown' datoFiltro='unknown' muestraValor={mostrarValor}/>
+
+            <section className='row section-filters py-5'>
+                <div className="d-flex">
+                <h2 className="filter-h2 m-4">Filters</h2>
+                </div>
+                <div className="d-flex justify-content-between flex-wrap">
+                <Filters nombreFiltro='Character Alive' datoFiltro='Alive' muestraValor={mostrarValor}/>
+                <Filters nombreFiltro='Character Dead' datoFiltro='Dead' muestraValor={mostrarValor}/>
+                <Filters nombreFiltro='Male' datoFiltro='Male' muestraValor={mostrarValor}/>
+                <Filters nombreFiltro='Female' datoFiltro='Female' muestraValor={mostrarValor}/>
+                <Filters nombreFiltro='Origin Unknown' datoFiltro='unknown' muestraValor={mostrarValor}/>
+                </div>
             </section>
             <SectionCards datos={datos}/>
 

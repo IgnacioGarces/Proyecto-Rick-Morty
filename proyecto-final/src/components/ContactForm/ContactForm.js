@@ -10,17 +10,17 @@ export default function ContactForm() {
     }
     return(
         <section className='contact-container d-flex flex-column align-items-center w-100'>
-            <h2>Contact</h2>
 
             <div className="form-container d-flex flex-column flex-wrap">
+                <h2 className='contact-title'>Contact</h2>
                 <h3>Leave us your information so we can contact you</h3>
-                <form>
-                    <div className='d-flex flex-row align-items-center justify-content-around'>
-                        <div className='d-flex flex-column align-items-center w-50 '>
+                <form className='g-3 p-4'>
+                    <div className='d-flex flex-row align-items-center justify-content-evenly'>
+                        <div className='d-flex flex-column align-items-start w-50 '>
                         <label htmlFor='Name'>Name</label>
                         <input type='text' value={inputName} onChange={changeInputName}></input>
                         </div>
-                        <div className='d-flex flex-column align-items-center w-50 ' >
+                        <div className='d-flex flex-column align-items-start w-50' >
                         <label htmlFor='Email'>Email</label>
                         <input type='text'></input>
                         </div>
@@ -30,8 +30,8 @@ export default function ContactForm() {
                         <label htmlFor='Message'>Message</label>
                         <input type='text' className='message-box'></input>
                     </div>
-                    <div className='button-container'>
-                    <button className='button-signIn'>Sign in</button>
+                    <div className='button-container d-flex flex-row align-items-start '>
+                    <button className='button-signIn btn botones colorW'>Sign in</button>
                     </div>
                 </form>
             </div>

@@ -2,6 +2,7 @@ import '../Filters/Filters.css'
 export default function Filters({nombreFiltro,datoFiltro,muestraValor}) {
     
     return (
+        
         <section className='row section-filters py-5'>
             <div className='filters d-flex justify-content-between flex-wrap'>
                 <div className='form-check form-switch px-5 py-2 mx-4'>
@@ -10,5 +11,6 @@ export default function Filters({nombreFiltro,datoFiltro,muestraValor}) {
                 </div>
             </div>
         </section>
+
     )
 }
