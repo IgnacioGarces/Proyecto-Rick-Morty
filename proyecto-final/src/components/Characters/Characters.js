@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import Filters from "../Filters/Filters"
 import Navegation from "../Navegation/Navegation"
 import SectionCards from "../SectionCards/SectionCards"
+import { Fragment } from "react"
 
 export default function Characters() {
     let [datos,setDatos]=useState([]);
@@ -51,17 +52,17 @@ export default function Characters() {
      },[])
 
     return(
-        <div>
+        <Fragment>
             <Navegation/>
             <section className="d-flex">
             <Filters nombreFiltro='Character Alive' datoFiltro='Alive' muestraValor={mostrarValor}/>
             <Filters nombreFiltro='Character Dead' datoFiltro='Dead' muestraValor={mostrarValor}/>
             <Filters nombreFiltro='Male' datoFiltro='Male' muestraValor={mostrarValor}/>
             <Filters nombreFiltro='Female' datoFiltro='Female' muestraValor={mostrarValor}/>
-            <Filters nombreFiltro='Origin Unknown' datoFiltro='Unknown' muestraValor={mostrarValor}/>
+            <Filters nombreFiltro='Origin Unknown' datoFiltro='unknown' muestraValor={mostrarValor}/>
             </section>
             <SectionCards datos={datos}/>
 
-        </div>
+        </Fragment>
     )
 }

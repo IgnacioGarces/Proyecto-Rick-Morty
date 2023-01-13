@@ -1,4 +1,5 @@
 import '../Navegation/Navegation.css'
+import { Link } from 'react-router-dom'
 export default function Navegation() {
     
     return(
@@ -7,10 +8,9 @@ export default function Navegation() {
                 <div className='container'>
                     <a className='name'>Rick & Morty</a>
                     <ul className='d-flex flex-row navbar-nav nav-pills'>
-                       <li className='nav-item'><a className="btn btn-primary title">Home</a></li>
-                       <li className='nav-item'><a className="btn btn-primary title">Characters</a></li>
-                       <li className='nav-item'><a className="btn btn-primary title">Contact</a></li>
-                       
+                       <li className='nav-item '><Link className='btn btn-primary title' to='/'>Home</Link></li>
+                       <li className='nav-item '><Link className='btn btn-primary title' to='/characters'>Characters</Link></li>
+                       <li className='nav-item '><Link className='btn btn-primary title' to='/contact'>Contact</Link></li>
                     </ul>
                 </div>
             </nav>

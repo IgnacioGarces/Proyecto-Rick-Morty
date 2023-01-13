@@ -31,5 +31,16 @@ nav{
 .title:hover{
     color: #344d67;
     background-color: #6ECCAF;
+    
+}
+
+a{
+    color: #6ECCAF;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #344d67;
+    background-color: #6ECCAF;
 
 }
