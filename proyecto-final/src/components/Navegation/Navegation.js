@@ -6,7 +6,7 @@ export default function Navegation() {
         <header>
             <nav className='navbar navbar-expand-lg w-100 '>
                 <div className='container'>
-                    <a className='name'>Rick & Morty</a>
+                    <h5 className='name'>Rick & Morty</h5>
                     <ul className='d-flex flex-row navbar-nav nav-pills'>
                        <li className='nav-item '><Link className='btn btn-primary title' to='/'>Home</Link></li>
                        <li className='nav-item '><Link className='btn btn-primary title' to='/characters'>Characters</Link></li>

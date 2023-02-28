@@ -14,8 +14,9 @@ export default function ContactForm() {
             <div className="form-container d-flex flex-column flex-wrap">
                 <h2 className='contact-title'>Contact</h2>
                 <h3>Leave us your information so we can contact you</h3>
-                <form className='g-3 p-4'>
-                    <div className='d-flex flex-row align-items-center justify-content-evenly'>
+
+                <form className='g-3 p-4 d-flex flex-column flex-wrap align-items-center justify-content-evenly'>
+                    <div className='d-flex flex-row  '>
                         <div className='d-flex flex-column align-items-start w-50 '>
                         <label htmlFor='Name'>Name</label>
                         <input type='text' value={inputName} onChange={changeInputName}></input>

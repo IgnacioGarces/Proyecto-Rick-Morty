@@ -1,6 +1,5 @@
 import '../SectionCards/SectionCards.css'
 import Card from "../Card/Card";
-import {useState} from 'react';
 
 
 export default function SectionCards({datos}){

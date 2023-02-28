@@ -15,7 +15,7 @@ export default function Card({info}) {
             <h2 key={info.name}> {info.name} </h2>
             <button onClick={mostrar} >{ocultar=== true?'Now More..':'Close'}</button>
         </div>
-        {ocultar==false?
+        {ocultar===false?
         <div>
             <ul className='list-group'>
                 <li className='list-group-item'>Character Status {info.status}</li>

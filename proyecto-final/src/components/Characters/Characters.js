@@ -1,9 +1,11 @@
 import '../Characters/Characters.css'
+
 import { useEffect, useState } from "react"
+import { Fragment } from "react"
+
 import Filters from "../Filters/Filters"
 import Navegation from "../Navegation/Navegation"
 import SectionCards from "../SectionCards/SectionCards"
-import { Fragment } from "react"
 
 export default function Characters() {
     let [datos,setDatos]=useState([]);
@@ -39,7 +41,7 @@ export default function Characters() {
         
     }
 
-      //saco la funcion por fuera para que lo pueda utilizar en mi funcion del evento
+    //saco la funcion por fuera para que lo pueda utilizar en mi funcion del evento
     const mostarInfo =async ()=>{
         let dato= await traerInfo()
         let infoPersonajes= dato.results
@@ -47,10 +49,12 @@ export default function Characters() {
         setDatos(infoPersonajes)
         setInfoCompleta(infoPersonajes)
     }
+
     //Se ejecuta cuando se renderiza la pagina
-     useEffect(()=>{
+    useEffect(()=>{
         mostarInfo() 
-     },[])
+    // eslint-disable-next-line react-hooks/exhaustive-deps 
+    },[])
 
     return(
         <Fragment className='d-flex '>
